@@ -8,14 +8,14 @@ public class Week03ArraysAndMethodsLab {
 		//
 		
 		// 1. Create an array with the following values 1, 5, 2, 8, 13, 6
-		int[] valuesArray = {1, 5, 2, 8, 13, 6};
+		int[] valuesArray = {1, 5, 2, 8, 13, 6}; // went with the most simple setup
 		double[] valuesArray2 = {1, 5, 2, 8, 13, 6};
 		// 2. Print out the first element in the array
-		System.out.println("Prompt 2");
+		System.out.println("Prompt 2"); // did this for clarity on which prompts were worked on
 		System.out.println(valuesArray[0]);
 		
 		// 3. Print out the last element in the array without using the number 5
-		int i = 0;
+		int i = 0; 
 		do {
 			i++;
 		} while (i < 4); 
@@ -96,12 +96,13 @@ public class Week03ArraysAndMethodsLab {
 		//		a. Analyze the difference between these two methods.
 		//		b. What do you find? 
 		//		c. How are they different?
-		// Both methods can lead to the same result, a return method can hold the value for later/other uses.
+		      // Both methods can lead to the same result, a return method can hold the value for later/other uses.
 		
 		// 15. Write and test a method that takes a String and an int and 
 		//			returns true if the number of letters in the string is greater than the int
 		System.out.println("Prompt 15");
-		System.out.println(greaterThanInt(namesArray[0], valuesArray[0])) ;
+		System.out.println(greaterThanInt(namesArray[0], valuesArray[0])) ; // i tried not to make several arrays, was being lazy lol
+		
 		// 16. Write and test a method that takes an array of string and a string and 
 		//			returns true if the string passed in exists in the array
 		System.out.println("Prompt 16");
@@ -150,8 +151,8 @@ public class Week03ArraysAndMethodsLab {
 		}
 		
 	// Method 15:
-	public static boolean greaterThanInt(String x, int y) {
-		return(y < x.length());
+	public static boolean greaterThanInt(String x, int y) { // i tend to use "x" and "y" a lot, changed some of them for clarity
+		return(y < x.length());							    // Need to get the hang of unique identifiers
 
 		
 	}
@@ -186,9 +187,9 @@ public class Week03ArraysAndMethodsLab {
 //		 int numWords[] = {words.length};
 //		 System.out.println(numWords);
 //	}
-	public static int[] wordNum(String[] words) {
-		int[] numWords = new int[words.length];
-		for (int i7 = 0; i7 < words.length; i7++) {
+	public static int[] wordNum(String[] words) {  // took me a while after making the code that i can use "i" for each method
+		int[] numWords = new int[words.length];    // instead of making each "i" unique, but i guess it helped me keep track of 
+		for (int i7 = 0; i7 < words.length; i7++) { // what i was doing
 			numWords[i7] = words[i7].length();
 		}
 		return numWords;
@@ -209,8 +210,8 @@ public class Week03ArraysAndMethodsLab {
 	}
 	
 	// Method 21:
-	public static boolean palindrome(String string) {
-		for (int i = 0; i < string.length() / 2; i++) {
+	public static boolean palindrome(String string) {	// I stumbled upon charAt and other methods but didn't fully understand them
+		for (int i = 0; i < string.length() / 2; i++) { // at the time
 			if (string.charAt(i) != string.charAt(string.length() - i - 1)) {
 				return false;
 			}
