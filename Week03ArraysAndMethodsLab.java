@@ -96,11 +96,7 @@ public class Week03ArraysAndMethodsLab {
 		//		a. Analyze the difference between these two methods.
 		//		b. What do you find? 
 		//		c. How are they different?
-
-
-		   
-		
-		
+		// Both methods can lead to the same result, a return method can hold the value for later/other uses.
 		
 		// 15. Write and test a method that takes a String and an int and 
 		//			returns true if the number of letters in the string is greater than the int
@@ -140,15 +136,8 @@ public class Week03ArraysAndMethodsLab {
 		//			returns true if the string is a palindrome
 		System.out.println("Prompt 21");
 		System.out.println(palindrome("racecar "));
-
-	
 	}
-		
-
-
-
-
-	
+			
 	// Method 13:
 	public static void greetPrint(String name) {
 		System.out.println("Hello " + name + "!");
@@ -191,10 +180,7 @@ public class Week03ArraysAndMethodsLab {
 		} 
 		return(i4 / a.length);
 	}	
-		
-		
-	
-	
+			
 	// Method 19:
 //	public static int wordNum(String words[]) {
 //		 int numWords[] = {words.length};
@@ -207,6 +193,7 @@ public class Week03ArraysAndMethodsLab {
 		}
 		return numWords;
 	}
+
 	// Method 20:
 	public static boolean evenOrOdd(String words2[]) {
 	int	nameSumOdd = 0;
